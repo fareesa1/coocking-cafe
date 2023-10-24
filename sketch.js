@@ -47,21 +47,21 @@ score = 0
 }
 
 function preload(){
-bg_image = loadImage("assets/background.png")
-esp_image = loadImage("assets/espresso.png")
-es_img = loadImage("assets/img/espresso.png")
+bg_image = loadImage("background.png")
+esp_image = loadImage("espresso.png")
+es_img = loadImage("es.png")
 
-stove_image = loadImage("assets/stove.png")
-st_img = loadImage("assets/img/stove.png")
-teapot_image= loadImage("assets/teapot.png")
-t_img= loadImage("assets/img/teapot.png")
+stove_image = loadImage("stove.png")
+st_img = loadImage("st.png")
+teapot_image= loadImage("teapot.png")
+t_img= loadImage("t.png")
 
-sugar_image= loadImage("assets/sugar.png")
-coco_image= loadImage("assets/coco_powder.png")
-water_image= loadImage("assets/water.png")
-tea_image= loadImage("assets/tea_leaves.png")
-milk_image= loadImage("assets/milk.png")
-frothedmilk_image= loadImage("assets/frothed_milk.png")
+sugar_image= loadImage("sugar.png")
+coco_image= loadImage("coco_powder.png")
+water_image= loadImage("water.png")
+tea_image= loadImage("tea_leaves.png")
+milk_image= loadImage("milk.png")
+frothedmilk_image= loadImage("frothed_milk.png")
 
 }
 
