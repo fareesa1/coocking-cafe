@@ -51,7 +51,7 @@ bg_image = loadImage("background.png")
 esp_image = loadImage("espresso.png")
 es_img = loadImage("es.png")
 
-stove_image = loadImage("stove.png")
+stove_image = loadImage("Stove.png")
 st_img = loadImage("st.png")
 teapot_image= loadImage("teapot.png")
 t_img= loadImage("t.png")
