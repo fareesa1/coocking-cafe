@@ -104,10 +104,13 @@ text(score,50,50)
   } else if(esp.scale == 0.1){
     image(es_img,65,170, 130,130)
   }
-  if (mousePressedOver(stove)) {
-    stove.scale = 0.1;
-    text(" Added",100,50)
-  } 
+   if (mouseX >= teapot.x && mouseX <= teapot.x + teapot.width &&
+      mouseY >= teapot.y && mouseY <= teapot.y + teapot.height) {
+    // Teapot was touched
+    teapot.scale = 0.1;
+    console.log("Teapot added");
+  }
+  return false; 
   if (mousePressedOver(esp)) {
     esp.scale = 0.1;
     text(" Added",100,50)
