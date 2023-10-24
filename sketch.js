@@ -145,7 +145,7 @@ text(score,50,50)
   }
   generateScore(db_value)
   drawSprites();
-
+detectTouches()
 }
 
 function generateScore(db_value){
@@ -159,3 +159,66 @@ function generateScore(db_value){
        }
   }
 }
+
+
+function detectTouches() {
+  for (var i = 0; i < touches.length; i++) {
+    var touchX = touches[i].x;
+    var touchY = touches[i].y;
+
+    // Check if the stove sprite is touched
+    if (stove.scale == 0.16 && dist(touchX, touchY, stove.position.x, stove.position.y) < 30) {
+      stove.scale = 0.1;
+      text("Stove Added", 100, 50);
+    }
+
+    // Check if the esp sprite is touched
+    if (esp.scale == 0.16 && dist(touchX, touchY, esp.position.x, esp.position.y) < 30) {
+      esp.scale = 0.1;
+      text("Esp Added", 100, 50);
+    }
+
+    // Check if the teapot sprite is touched
+    if (teapot.scale == 0.16 && dist(touchX, touchY, teapot.position.x, teapot.position.y) < 30) {
+      teapot.scale = 0.1;
+      text("Teapot Added", 100, 50);
+    }
+
+    // Check if the water sprite is touched
+    if (water.scale == 0.16 && dist(touchX, touchY, water.position.x, water.position.y) < 30) {
+      water.scale = 0.1;
+      text("Water Added", 100, 50);
+    }
+
+    // Check if the tea_leaves sprite is touched
+    if (tea_leaves.scale == 0.16 && dist(touchX, touchY, tea_leaves.position.x, tea_leaves.position.y) < 30) {
+      tea_leaves.scale = 0.1;
+      text("Tea Leaves Added", 100, 50);
+    }
+
+    // Check if the choc_powder sprite is touched
+    if (choc_powder.scale == 0.16 && dist(touchX, touchY, choc_powder.position.x, choc_powder.position.y) < 30) {
+      choc_powder.scale = 0.1;
+      text("Choc Powder Added", 100, 50);
+    }
+
+    // Check if the milk sprite is touched
+    if (milk.scale == 0.16 && dist(touchX, touchY, milk.position.x, milk.position.y) < 30) {
+      milk.scale = 0.1;
+      text("Milk Added", 100, 50);
+    }
+
+    // Check if the frothedmilk sprite is touched
+    if (frothedmilk.scale == 0.16 && dist(touchX, touchY, frothedmilk.position.x, frothedmilk.position.y) < 30) {
+      frothedmilk.scale = 0.1;
+      text("Frothed Milk Added", 100, 50);
+    }
+
+    // Check if the sugar sprite is touched
+    if (sugar.scale == 0.16 && dist(touchX, touchY, sugar.position.x, sugar.position.y) < 30) {
+      sugar.scale = 0.1;
+      text("Sugar Added", 100, 50);
+    }
+  }
+}
+
